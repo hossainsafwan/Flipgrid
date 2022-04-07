@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Flipgrid</string>
+    <string name="ui_sign_up_fragment_title">Profile Creation</string>
+    <string name="ui_sign_up_fragment_subtitle">Use the form below to submit your portfolio.\nAn email and password are required.</string>
+    <string name="ui_sign_up_fragment_submit_button">Submit</string>
+    <string name="ui_sign_up_fragment_first_name_hint">First Name</string>
+    <string name="ui_sign_up_fragment_email_address_hint">Email Address</string>
+    <string name="ui_sign_up_fragment_password_hint">Password</string>
+    <string name="ui_sign_up_fragment_website_hint">Website</string>
+
 </resources>
