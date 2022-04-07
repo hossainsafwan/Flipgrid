@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.flipgrid.ui.SignUpFragment"
-        android:label="SignUpFragment" />
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.example.flipgrid.ui.ConfirmationFragment"
+        android:label="ConfirmationFragment" />
 </navigation>
