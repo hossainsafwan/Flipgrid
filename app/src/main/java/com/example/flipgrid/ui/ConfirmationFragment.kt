@@ -30,6 +30,7 @@ class ConfirmationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val user = args.user
         binding.apply {
+            confirmationFragmentTitle.text = "Hello, ${user.firstName.replaceFirstChar { it.uppercase() }}!"
             confirmationFragmentFirstName.text = user.firstName
             confirmationFragmentWebsite.text = user.website
             confirmationFragmentEmail.text = user.emailAddress
