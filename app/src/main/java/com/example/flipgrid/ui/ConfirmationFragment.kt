@@ -5,12 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.navArgs
 import com.example.flipgrid.databinding.ConfirmationFragmentBinding
 
-class ConfirmationFragment: Fragment() {
+/**
+ * This is the fragment which displays the users information
+ */
+class ConfirmationFragment : Fragment() {
     private var _binding: ConfirmationFragmentBinding? = null
     private val binding get() = _binding!!
 
+    val args: ConfirmationFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,6 +28,11 @@ class ConfirmationFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val user = args.user
+        binding.apply {
+            confirmationFragmentFirstName.text = user.firstName
+            confirmationFragmentWebsite.text = user.website
+            confirmationFragmentEmail.text = user.emailAddress
+        }
     }
 }

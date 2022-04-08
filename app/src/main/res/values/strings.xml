@@ -7,5 +7,7 @@
     <string name="ui_sign_up_fragment_email_address_hint">Email Address</string>
     <string name="ui_sign_up_fragment_password_hint">Password</string>
     <string name="ui_sign_up_fragment_website_hint">Website</string>
+    <string name="ui_confirmation_fragment_subtitle">Your super awesome Portfolio has been\n successfully submitted! the details below\n will be public within your community!</string>
+    <string name="ui_confirmation_fragment_sign_in_button">Sign In</string>
 
 </resources>
