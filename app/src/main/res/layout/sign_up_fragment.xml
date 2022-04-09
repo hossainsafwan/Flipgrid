@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity = "center">
+    android:fillViewport="true">
 
     <TextView
         android:id="@+id/signUpFragmentTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:layout_marginStart="32dp"
-        android:gravity = "center_vertical|start"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|start"
         android:text="@string/ui_sign_up_fragment_title"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -23,91 +23,108 @@
         android:id="@+id/signUpFragmentSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:gravity="center|start"
         android:text="@string/ui_sign_up_fragment_subtitle"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signUpFragmentTitle" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signUpFragmentFirstNameTextInputLayout"
+        android:background="@android:color/transparent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:hint="@string/ui_sign_up_fragment_first_name_hint"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signUpFragmentSubtitle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signUpFragmentFirstNameTextInputEditText"
+            style="@style/form_edit_texts"
+            android:textColorHint="?android:textColorSecondary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/ui_sign_up_fragment_first_name_hint"
             android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signUpFragmentEmailAddressTextInputLayout"
+        android:background="@android:color/transparent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:hint="@string/ui_sign_up_fragment_email_address_hint"
+        app:errorEnabled="false"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signUpFragmentFirstNameTextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signUpFragmentEmailAddressTextInputEditText"
+            style="@style/form_edit_texts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/ui_sign_up_fragment_email_address_hint"
             android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signUpFragmentPasswordTextInputLayout"
+        android:background="@android:color/transparent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:hint="@string/ui_sign_up_fragment_password_hint"
+        app:errorEnabled="false"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpFragmentEmailAddressTextInputLayout">
+        app:layout_constraintTop_toBottomOf="@id/signUpFragmentEmailAddressTextInputLayout"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signUpFragmentPasswordTextInputEditText"
+            style="@style/form_edit_texts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/ui_sign_up_fragment_password_hint"
+            android:inputType="textPassword"
             android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signUpFragmentWebsiteTextInputLayout"
+        android:background="@android:color/transparent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:hint="@string/ui_sign_up_fragment_website_hint"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signUpFragmentPasswordTextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signUpFragmentWebsiteTextInputEditText"
+            style="@style/form_edit_texts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/ui_sign_up_fragment_website_hint"
             android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>

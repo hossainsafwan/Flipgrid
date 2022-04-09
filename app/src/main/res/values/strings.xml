@@ -3,11 +3,12 @@
     <string name="ui_sign_up_fragment_title">Profile Creation</string>
     <string name="ui_sign_up_fragment_subtitle">Use the form below to submit your portfolio.\nAn email and password are required.</string>
     <string name="ui_sign_up_fragment_submit_button">Submit</string>
-    <string name="ui_sign_up_fragment_first_name_hint">First Name</string>
-    <string name="ui_sign_up_fragment_email_address_hint">Email Address</string>
-    <string name="ui_sign_up_fragment_password_hint">Password</string>
-    <string name="ui_sign_up_fragment_website_hint">Website</string>
+    <string name="ui_sign_up_fragment_first_name_hint"><b>First Name</b></string>
+    <string name="ui_sign_up_fragment_email_address_hint"><b>Email Address</b></string>
+    <string name="ui_sign_up_fragment_password_hint"><b>Password</b></string>
+    <string name="ui_sign_up_fragment_website_hint"><b>Website</b></string>
+    <string name="ui_sign_up_fragment_error_description">Required Field</string>
     <string name="ui_confirmation_fragment_subtitle">Your super awesome Portfolio has been\n successfully submitted! the details below\n will be public within your community!</string>
     <string name="ui_confirmation_fragment_sign_in_button">Sign In</string>
-
+    <string name="ui_confirmation_fragment_greeting">Hello, %1$s!</string>
 </resources>
