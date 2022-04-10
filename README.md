@@ -7,8 +7,8 @@ The `tagetSdk` is 31 (Android 12) and the `minSdk` is 21 (Android 5.0).
 # Assumptions
 
 - The debug build has been put in the release for the sake of simplicity.
-- The app has also been locked to portrait mode to reduce scope of complexity and simple nature of the app.
-- Currently the password serves no purpose and is not stored in the user model or anywhere else
+- The app has also been locked to portrait mode to reduce scope of complexity and due to the simple nature of the app.
+- Currently the password serves no purpose (except for ensuring the password field is filled) and is not stored in the user model or anywhere else
 
 # Demo 
 
